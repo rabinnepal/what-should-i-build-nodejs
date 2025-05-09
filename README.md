@@ -23,7 +23,7 @@ A Node.js backend for the "What Should I Build" project idea generator, built wi
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:rabinnepal/what-should-i-build-nodejs.git
 cd what-should-i-build-backend
 ```
 
