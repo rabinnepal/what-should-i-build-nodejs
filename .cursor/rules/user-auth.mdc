@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+
+# `user-auth.mdc`
+```markdown
+# Feature: User Authentication
+## Purpose
+Secure user registration, login, and token-based access for protected endpoints.
+
+## Routes
+- **POST** `/api/auth/register`
+- **POST** `/api/auth/login`
+- **GET** `/api/auth/me` (protected)
+
+## Request Bodies
+### Register
+```json
+{
+  "username": "string",
+  "email": "string",
+  "password": "string"
+}

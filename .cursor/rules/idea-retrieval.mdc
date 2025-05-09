@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+
+# `idea-retrieval.mdc`
+```markdown
+# Feature: Idea Retrieval
+
+## Purpose
+Fetch ideas for display: trending, top-voted, or user-specific.
+
+## Routes
+- **GET** `/api/ideas` (query params: `sort=votes|date`, `page`, `limit`)
+- **GET** `/api/ideas/:id`
+
+## Response
+List or single idea object with metadata and vote counts
+
+## Implementation Steps
+1. Query database with filters and pagination
+2. Join vote aggregates
+3. Return JSON list or object
