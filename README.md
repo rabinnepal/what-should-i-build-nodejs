@@ -99,7 +99,7 @@ See `prisma/schema.prisma` for the complete schema definition.
 - `PINECONE_API_KEY` - Pinecone API key
 - `PINECONE_ENVIRONMENT` - Pinecone environment
 - `PINECONE_INDEX` - Pinecone index name
-- `PORT` - Server port (default: 3000)
+- `PORT` - Server port (default: 5000)
 - `GOOGLE_CLIENT_ID`- Google Client ID
 - `GOOGLE_CLIENT_SECRET`=Google Client Secret
 - `GITHUB_CLIENT_ID`= GitHub Client ID
