@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+
+# `community-voting.mdc`
+```markdown
+# Feature: Community Voting
+## Purpose
+Enable users to upvote or downvote submitted ideas, similar to Reddit.
+
+## Routes
+- **POST** `/api/ideas/:id/vote` (protected)
+  - Body: `{ "vote": 1 | -1 }`
+- **GET** `/api/ideas/:id/votes`
+
+## Response
+- Vote: `{ total: number }`
+- Get: `{ upvotes: number, downvotes: number, score: number }`
+
+## Implementation Steps
+1. Prevent duplicate votes per user
+2. Update `votes` table and aggregate counts
+3. Return updated totals

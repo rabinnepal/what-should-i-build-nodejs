@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Feature: Embedding-Based Recommendation
+
+## Purpose
+Use AI embeddings to match quiz answers to project ideas in a vector search.
+
+## Route
+**POST** `/api/embeddings/search` (protected)
+## Request Body
+```json
+{
+  "answersVector": [ /* array of floats */ ]
+}

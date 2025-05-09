@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Feature: Quiz Suggestion Logic
+
+## Purpose
+Suggest a project idea based on a user's quiz responses and selected filters.
+
+## API Route
+**POST** `/api/quiz/suggest`
+
+## Request Body
+```json
+{
+  "answers": 
+  "filters": {
+    "difficulty": "easy|medium|hard",
+    "vibe": "creative|useful|silly",
+    "tech": "string",
+    "time": "string"
+  }
+}

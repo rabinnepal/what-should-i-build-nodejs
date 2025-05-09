@@ -1,0 +1,26 @@
+type = "node"
+name = "What Should I Build - Backend"
+language = "javascript"
+
+[context]
+include = [
+  "app.js",
+  "routes/",
+  "controllers/",
+  "models/",
+  "utils/",
+  "config/",
+  "middleware/"
+]
+exclude = [
+  "node_modules/",
+  ".env",
+  "logs/",
+  "tmp/"
+]
+
+[scripts]
+dev = "nodemon app.js"
+start = "node app.js"
+lint = "npx eslint ."
+format = "npx prettier --write ."

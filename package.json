@@ -1,0 +1,46 @@
+{
+  "name": "what-should-i-build-backend",
+  "version": "1.0.0",
+  "description": "Backend for What Should I Build - Project Idea Generator",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "lint": "npx eslint .",
+    "format": "npx prettier --write .",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "prisma db seed",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.2.0",
+    "@pinecone-database/pinecone": "^5.1.2",
+    "@prisma/client": "^5.10.0",
+    "bcryptjs": "^2.4.3",
+    "cohere-ai": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "pinecone-client": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
+    "prisma": "^5.10.0",
+    "supertest": "^7.1.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}

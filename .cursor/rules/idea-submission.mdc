@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+
+# `idea-submission.mdc`
+```markdown
+# Feature: Idea Submission
+
+## Purpose
+Allow authenticated users to submit new project ideas for the community.
+
+## Route
+**POST** `/api/ideas/` (protected)
+
+## Request Body
+```json
+{
+  "title": "string",
+  "description": "string",
+  "tags": ["tech", "vibe", ...]
+}
